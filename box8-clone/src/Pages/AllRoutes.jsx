@@ -1,10 +1,18 @@
 import React from 'react'
 import { Home } from './Home'
+import {Routes,Route} from "react-router-dom"
+import { Meals } from './Meals'
 
 export const AllRoutes = () => {
   return (
     <>
-    <Home/>
+    <Routes>
+      <Route path='/' element={<Home/>}></Route>
+      <Route path ="/meals/:_id" element={<Meals/>}></Route>
+
+    </Routes>
+    
+
     </>
   )
 }

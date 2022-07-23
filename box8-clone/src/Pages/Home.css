@@ -1,0 +1,29 @@
+.fourDivs{
+   
+    text-align:left;
+    background:white;
+    padding:4%
+}
+.gridFourdivs{
+    display:grid;
+    width:50%;
+    grid-template-columns:repeat(2,12rem);
+    grid-template-rows:repeat(2,15rem);
+    gap:5%;
+    margin-left:15%;
+    padding-top:5%;
+    padding-bottom: 5%;
+}
+.styleforh4{
+    font-weight:bold;
+    font-size:1.7rem
+}
+.imgstyleInh4{
+    width:30%;
+    height:25%
+}
+.desiMeals{
+    font-size:3rem;
+    font-family:bolder;
+    color:red;
+}
