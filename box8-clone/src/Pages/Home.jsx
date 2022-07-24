@@ -11,6 +11,7 @@ import {Link} from 'react-router-dom'
 import { ProductSimple } from './ProductSimple'
 import { Slider2 } from './Slider2'
 import { Slider3 } from './Slider3'
+import { Navbar } from './Navbar'
 export const Home = () => {
 const [data,setData]=useState([]);
 const [error,setError]=useState("")
@@ -30,6 +31,7 @@ const [error,setError]=useState("")
 
   return (
    <>
+   <Navbar/>
    <div style={{width:"100%",height:"350px",backgroundColor:"rgb(39,46,58)"}}>
     <Slider/>
    </div>

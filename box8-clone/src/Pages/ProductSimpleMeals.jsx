@@ -1,9 +1,20 @@
 import { Box, Button, Center, Heading, Image, Stack, useColorModeValue } from "@chakra-ui/react";
+import { useDispatch } from "react-redux";
+import { addProductCart } from "../Redux/cart/action";
 
 
 
 export const ProductSimpleMeals=(props) =>{
-    console.log(props,"props")
+
+  const dispatch=useDispatch()
+   // console.log(props,"props")
+
+   const handleaddCart=(payload)=>{
+    alert("Your meal is added to cart")
+
+   dispatch(addProductCart(payload))
+
+   }
 
     return (
       <Center py={12}>
@@ -11,7 +22,7 @@ export const ProductSimpleMeals=(props) =>{
          textAlign={"left"}
           role={'group'}
           p={6}
-          maxW={'330px'}
+          maxW={'350px'}
           w={'full'}
           bg={useColorModeValue('white', 'gray.800')}
           boxShadow={'2xl'}
@@ -61,7 +72,7 @@ export const ProductSimpleMeals=(props) =>{
             <Box display={'flex'} justifyContent={'space-around'}>
 
             <h2 style={{fontFamily:"inherit",fontSize:"2rem"}}>₹{props.meal_price}</h2>
-            <Button  style={{border:"2px solid pink", color:"darkorange",background:"none"}}>ADD</Button>
+            <Button style={{border:"2px solid pink", color:"darkorange",background:"none"}} onClick={()=>handleaddCart(props)}>ADD</Button>
             </Box>
            
           </Stack>

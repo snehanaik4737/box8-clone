@@ -3,6 +3,8 @@ import React from "react";
 import { Link as RouterLink } from "react-router-dom";
 import { BsCart3 } from "react-icons/bs";
 import { BsPercent,BsFillPersonFill} from "react-icons/bs";
+import { Cart } from "./Cart";
+import { CartCounter } from "./CartCounter";
 export const Navbar = () => {
   return (
     <>
@@ -47,9 +49,12 @@ export const Navbar = () => {
           <Box style={{ display: "flex" }}>
             {/* <Link as={RouterLink} to="/cart"> */}
             <Icon as={BsCart3} boxSize="2rem" style={{ width:"25px",height:'25px'}}></Icon>
-            <Box position="relative" padding="0 0.5rem 0 0">
-              Cart
-              {/* <CartCounter /> */}
+
+             
+            <Box position="relative" padding="0 0.5rem 0 0" >
+            <Cart/>
+            <CartCounter />
+            
             </Box>
 
             {/* </Link> */}

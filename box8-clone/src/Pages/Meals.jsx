@@ -6,7 +6,12 @@ import { Slider } from "./Slider";
 import "./Meals.css";
 import { ProductSimple } from "./ProductSimple";
 import { ProductSimpleMeals } from "./ProductSimpleMeals";
+import { useSelector } from "react-redux";
+import { Navbar } from "./Navbar";
 export const Meals = () => {
+
+  // const cart = useSelector((store) => store.cartData.cart);
+  // console.log("cart",cart)
   const [data, setData] = useState([]);
   const [error, setError] = useState("");
 
@@ -55,6 +60,7 @@ export const Meals = () => {
 
   return (
     <>
+      <Navbar/>
       <Box className="greybox">
         Add items worth Rs.202 to get FREE Chocolava Cake
       </Box>
@@ -100,7 +106,7 @@ export const Meals = () => {
       </Box>
 
       <Box display={"flex"} w={"100%"}>
-        <Box w={"30%"} marginLeft={"5%"}>
+        <Box w={"30%"} marginLeft={"5%"} >
           <Heading>Menu</Heading>
           <Box
             style={{
@@ -108,6 +114,7 @@ export const Meals = () => {
               overflow: "scroll",
               borderRight: "0.5px solid gray",
               height: "350px",
+                       
             }}
           >
             {dataCategory.map((item, index) => (
@@ -121,7 +128,7 @@ export const Meals = () => {
             ))}
           </Box>
         </Box>
-        <Box w={"70%"}>
+        <Box className='mealContainer'>
           <Stack display={{ md: "flex" }} flexDirection={{ md: "row" }}>
             <Box>
               <Flex flexWrap="wrap" justifyContent="space-around">
