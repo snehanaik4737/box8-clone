@@ -30,7 +30,8 @@ router.post("", async (req,res)=>{
 
 router.get("/:id", async (req, res) => {
     try {
-        const meal = await Meals.find(req.params.id).lean().exec();
+       // console.log(req.params.id)
+        const meal = await Meals.find({meal_category_id:req.params.id}).lean().exec();
 
         return res.status(200).send(meal);
     } catch (error) {
