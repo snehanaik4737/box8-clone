@@ -14,9 +14,9 @@ export const Slider3=()=> {
   return (
     <div className="slide">
       <Carousel breakPoints={breakPoints}>
-        {arr.map((item)=>(
+        {arr.map((item,index)=>(
 
-        <Item>
+        <Item key={index}>
         <Box className="perdiv">
           <img style={{height:"100%", width:"100%"}} src={item.image} alt=""/>
          

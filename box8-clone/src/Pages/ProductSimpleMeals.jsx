@@ -1,12 +1,14 @@
-import { Box, Center, Heading, Image, Stack, useColorModeValue } from "@chakra-ui/react";
+import { Box, Button, Center, Heading, Image, Stack, useColorModeValue } from "@chakra-ui/react";
 
 
 
-export const ProductSimple=(props) =>{
+export const ProductSimpleMeals=(props) =>{
+    console.log(props,"props")
 
     return (
       <Center py={12}>
         <Box
+         textAlign={"left"}
           role={'group'}
           p={6}
           maxW={'330px'}
@@ -17,6 +19,7 @@ export const ProductSimple=(props) =>{
           pos={'relative'}
           zIndex={1}>
           <Box
+         
             rounded={'lg'}
             mt={-12}
             pos={'relative'}
@@ -29,7 +32,7 @@ export const ProductSimple=(props) =>{
               pos: 'absolute',
               top: 5,
               left: 0,
-              backgroundImage: `url(${props.category_image})`,
+              backgroundImage: `url(${""})`,
               filter: 'blur(15px)',
               zIndex: -1,
             }}
@@ -43,20 +46,25 @@ export const ProductSimple=(props) =>{
               height={230}
               width={282}
               objectFit={'contain'}
-              src={props.category_image}
+              src={props.meal_image}
             />
           </Box>
-          {/* <Stack pt={10} align={'center'}>
+          <Stack pt={10} >
            
             <Heading fontSize={'2xl'} fontFamily={'body'} fontWeight={500}>
-             {props.category_name}
+             {props.meal_name}
             </Heading>
            
-            <Heading fontSize={'1xl'} fontFamily={'body'} fontWeight={400}>
-             {props.desc}
-            </Heading>
+            <p fontSize={'1xl'} fontFamily={'body'} fontWeight={400}>
+             {props.meal_desc}
+            </p>
+            <Box display={'flex'} justifyContent={'space-around'}>
+
+            <h2 style={{fontFamily:"inherit",fontSize:"2rem"}}>₹{props.meal_price}</h2>
+            <Button  style={{border:"2px solid pink", color:"darkorange",background:"none"}}>ADD</Button>
+            </Box>
            
-          </Stack> */}
+          </Stack>
         </Box>
       </Center>
     );
