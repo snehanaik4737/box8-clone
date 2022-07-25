@@ -50,7 +50,7 @@ import {
   
   useEffect(()=>{
     if(location?.state?.pathname && auth){
-        console.log(location.state.pathname,"path")
+        //console.log(location.state.pathname,"path")
       navigate(location.state?.pathname, {replace:true})
     }
   },[location?.state?.pathname,navigate,auth])

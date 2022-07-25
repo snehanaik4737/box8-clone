@@ -5,7 +5,7 @@ export const PrivateRoute = ({children}) => {
    const auth =useSelector((store)=>store.auth);
 
    const location =useLocation();
-   console.log(auth); 
+  // console.log(auth); 
    if(auth.isLogin){
     return children
    }

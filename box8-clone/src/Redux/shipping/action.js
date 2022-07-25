@@ -2,7 +2,7 @@
 
 
  export const saveShippingInfo=(data)=>{
-    console.log("data",data)
+   // console.log("data",data)
     return{
      
         type:SAVE_SHIPPING_INFO,

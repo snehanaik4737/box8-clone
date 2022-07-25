@@ -70,27 +70,7 @@ export const mealReducer = (state = initState, action) => {
               loading: false,
               error: payload,
             };
-        //     case types.FETCH_ORDER_REQUEST:
-        //       return {
-        //         ...state,
-        //         error: "",
-        //         loading: true,
-        //       };
-        //     case types.FETCH_ORDER_SUCCESS:
-        //       return {
-        //         ...state,
-        //         order:[...payload],
-        //         error: "",
-        //         loading: false,
-        //       };
-        //     case types.FETCH_ORDER_FAILURE:
-        //       return {
-        //         ...state,
-        //         loading: false,
-        //         error: payload,
-        //       };
-
-
+        
     default:
       return state;
   }

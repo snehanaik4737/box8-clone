@@ -49,7 +49,7 @@ export const authReducer=(state=initState,action)=>{
         case actions.REGISTER_SUCCESS:{
             localStorage.setItem("name",action.payload.name);
             localStorage.setItem("isAuth",true)
-            console.log("payload",action.payload)
+           // console.log("payload",action.payload)
             return {
                 ...state,
                 isAuth:true,

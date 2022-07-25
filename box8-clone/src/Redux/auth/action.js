@@ -58,7 +58,7 @@ export const registerFailure=(err)=>{
 }
 
  const loginUser=(payload)=>(dispatch)=>{
-     console.log(payload,"payload")
+    // console.log(payload,"payload")
 
      const  {username,password}=payload
     const requestAction=loginRequest()

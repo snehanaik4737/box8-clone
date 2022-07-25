@@ -54,7 +54,7 @@ export const Meals = () => {
   };
 
   const handleget = (id) => {
-    console.log(id, "id");
+  //  console.log(id, "id");
     fetchData(id);
   };
 

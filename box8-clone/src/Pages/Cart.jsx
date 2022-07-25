@@ -36,7 +36,7 @@ const removeProduct=(id)=>{
 const  navigateCheckout=()=>{
   navigate("/shipping", {replace:true})
 }
-    console.log("cartadat",cartData)
+   // console.log("cartadat",cartData)
     const { isOpen, onOpen, onClose } = useDisclosure();
     return (
       <Box>
