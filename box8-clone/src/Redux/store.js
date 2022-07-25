@@ -4,10 +4,14 @@ import { combineReducers } from "redux";
 import { applyMiddleware } from "redux";
 import { compose } from "redux";
 import thunk from "redux-thunk";
+import { authReducer } from "./auth/reducer";
 import { mealReducer } from "./cart/reducer";
+import { ShippingReducer } from "./shipping/reducer";
 
 const rootReducer=combineReducers({
-    cartData:mealReducer
+    auth:authReducer,
+    cartData:mealReducer,
+    shippingInfo:ShippingReducer,
 })
 
 const composeEnhancers=  window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose

@@ -1,0 +1,73 @@
+.default{
+    width:80px;
+    height:30px;
+    background-color:yellow;
+    text-align:center;
+    margin-left:2%
+}
+
+.container{
+    width:90%;
+    padding-left:30px;
+    background-color: white;
+    margin:auto;
+    border:1px solid gray;
+    margin-bottom: 50px;
+    text-align: left;
+
+}
+.container>p,h3{
+    margin-bottom: 2%;
+    margin-top:1%
+}
+
+.paymentImages{
+border-bottom:1px solid gray;
+padding-top:15px;
+display:flex;
+padding-bottom: 3%;
+}
+.paymentImages>img{
+    width:50px;
+    height:30px
+}
+.paymentMethod{
+    width:100%;
+    border-bottom:1px solid gray;
+    padding-top:15px;
+    padding-bottom:1%;
+    text-align: left;
+
+}
+.easier{
+   margin-left: 3%;
+
+}
+
+.payBill{
+    width:30%;
+    margin-left:2%;
+    margin-top:3%;
+    padding:2%;
+    border:1px solid gray;
+    margin-bottom:10%;
+    text-align:left
+}
+.payBill h4, .payBill h3{
+    margin-bottom:2%
+}
+.payBill>div{
+    border-bottom: 1px solid black;
+}
+#payNow{
+   justify-content:  center;
+   background-color: crimson;
+   color:white;
+   text-align: center;
+   padding:3%;
+   border:none
+   
+}
+#payNow:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}

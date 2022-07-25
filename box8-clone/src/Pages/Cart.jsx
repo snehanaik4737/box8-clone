@@ -34,7 +34,7 @@ const removeProduct=(id)=>{
 }
 
 const  navigateCheckout=()=>{
-  navigate("/checkout", {replace:true})
+  navigate("/shipping", {replace:true})
 }
     console.log("cartadat",cartData)
     const { isOpen, onOpen, onClose } = useDisclosure();

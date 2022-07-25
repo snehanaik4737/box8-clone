@@ -1,19 +1,22 @@
 import { Box, Icon, Image, Link } from "@chakra-ui/react";
 import React from "react";
-import { Link as RouterLink } from "react-router-dom";
+import { Link as RouterLink }   from "react-router-dom";
 import { BsCart3 } from "react-icons/bs";
 import { BsPercent,BsFillPersonFill} from "react-icons/bs";
 import { Cart } from "./Cart";
 import { CartCounter } from "./CartCounter";
 export const Navbar = () => {
+  
   return (
     <>
       <Box style={{ width: "100%", display: "flex"}}>
         <Box style={{ width: "70%", display: "flex", margin: "2%" }}>
+        
           <Image
             style={{ width: "15%", height: "100%", marginLeft: "4%" }}
             src="https://d2pc4443o2qatl.cloudfront.net/20220625101743/assets/images/logo.png"
           ></Image>
+        
           <input
             style={{
               border: "0.2px solid gray",
@@ -60,16 +63,19 @@ export const Navbar = () => {
             {/* </Link> */}
           </Box>
           <div  style={{width:"1px",height:"70%",backgroundColor:"gray"}}></div>
+
           <Box style={{ display: "flex" }}>
             {/* <Link as={RouterLink} to="/cart"> */}
          <BsFillPersonFill style={{ width:"25px",height:'25px'}}/>
+         <Link as={RouterLink} to="/signup">
             <Box position="relative" padding="0 0.5rem 0 0">
              Sign in
               {/* <CartCounter /> */}
             </Box>
+          </Link>
             
-            {/* </Link> */}
           </Box>
+            {/* </Link> */}
          
         </Box>
       </Box>
